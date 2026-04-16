@@ -6,7 +6,7 @@
 /*   By: waroo <waroo@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 17:23:09 by waroonwork@       #+#    #+#             */
-/*   Updated: 2026/04/16 20:06:45 by waroo            ###   ########.fr       */
+/*   Updated: 2026/04/16 21:05:24 by waroo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ Fixed::Fixed(const int intVal)
 
 Fixed::Fixed(const float floatVal)
 {
-	this->fixed_number = (floatVal * (1 << this->fraction));
+	this->fixed_number = roundf(floatVal * (1 << this->fraction));
 }
 
 float Fixed::toFloat() const
