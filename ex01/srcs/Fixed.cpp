@@ -6,7 +6,7 @@
 /*   By: waroo <waroo@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 17:23:09 by waroonwork@       #+#    #+#             */
-/*   Updated: 2026/04/16 16:32:42 by waroo            ###   ########.fr       */
+/*   Updated: 2026/04/16 19:58:27 by waroo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,8 +70,7 @@ int Fixed::toInt() const
 	return this->fixed_number >> this->fraction;
 }
 
-std::ostream &operator<<(std::ostream &os, const Fixed &fixed)
-{
-	os << fixed.toFloat(); 
+std::ostream& operator<<(std::ostream& os, const Fixed& fixed) {
+	os << fixed.toFloat();
 	return os;
 }
