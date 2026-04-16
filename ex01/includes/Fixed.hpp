@@ -6,7 +6,7 @@
 /*   By: waroo <waroo@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 17:22:11 by waroonwork@       #+#    #+#             */
-/*   Updated: 2026/04/16 19:58:23 by waroo            ###   ########.fr       */
+/*   Updated: 2026/04/16 20:10:26 by waroo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,7 @@ public:
 	float toFloat( void ) const;
 	int toInt( void ) const;
 };
+
+std::ostream& operator<<(std::ostream& os, const Fixed& fixed);
 
 #endif
