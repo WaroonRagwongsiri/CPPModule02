@@ -6,7 +6,7 @@
 /*   By: waroonwork@gmail.com <WaroonRagwongsiri    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/26 14:55:39 by waroonwork@       #+#    #+#             */
-/*   Updated: 2026/06/26 15:33:19 by waroonwork@      ###   ########.fr       */
+/*   Updated: 2026/06/26 20:33:48 by waroonwork@      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,12 @@ Point::~Point()
 {
 }
 
-Fixed Point::getX()
+Fixed Point::getX() const
 {
 	return (this->x);
 }
 
-Fixed Point::getY()
+Fixed Point::getY() const
 {
 	return (this->y);
 }

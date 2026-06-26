@@ -6,7 +6,7 @@
 #    By: waroonwork@gmail.com <WaroonRagwongsiri    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/06/26 14:52:16 by waroonwork@       #+#    #+#              #
-#    Updated: 2026/06/26 14:59:12 by waroonwork@      ###   ########.fr        #
+#    Updated: 2026/06/26 21:09:10 by waroonwork@      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ SUFFIX		:=	.cpp
 INC_DIR		:=	includes/
 SRCS_DIR	:=	srcs/
 
-SRCS_FILES	:=	main Fixed Point
+SRCS_FILES	:=	main Fixed Point bsp
 
 SRCS		:=	$(addsuffix $(SUFFIX), $(addprefix $(SRCS_DIR), $(SRCS_FILES)))
 OBJS		:=	$(SRCS:%$(SUFFIX)=%.o)

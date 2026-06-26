@@ -6,7 +6,7 @@
 /*   By: waroonwork@gmail.com <WaroonRagwongsiri    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/26 14:52:39 by waroonwork@       #+#    #+#             */
-/*   Updated: 2026/06/26 15:36:31 by waroonwork@      ###   ########.fr       */
+/*   Updated: 2026/06/26 21:10:54 by waroonwork@      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ class Point
 		Point(const Point& other);
 		Point& operator=(const Point& other);
 		~Point();
-		Fixed getX();
-		Fixed getY();
+		Fixed getX() const;
+		Fixed getY() const;
 };
 
 bool	bsp( Point const a, Point const b, Point const c, Point const point);
